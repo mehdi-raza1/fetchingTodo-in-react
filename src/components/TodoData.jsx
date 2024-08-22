@@ -9,7 +9,11 @@ const TodoData = ({ toaster, loading, todos, setTodos }) => {
   return (
     <div id="showTodos" className="container mt-3 mx-auto flex justify-center">
       {loading ? (
-        <h3 className="ms-3 mt-3 text-xl font-bold">Loading...</h3>
+      <h3 className="ms-3 mt-3 text-xl font-semibold text-gray-800 dark:text-gray-200 animate-pulse">
+      Loading...
+    </h3>
+    
+     
       ) : (
         <ul className="w-1/2 mt-3 ms-3">
           {todos?.map((todo) => (

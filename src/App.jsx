@@ -10,7 +10,6 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   function clickFetchTodos() {
-    console.log("click checking");
 
     setLoading(true);
 
